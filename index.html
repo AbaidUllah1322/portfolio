@@ -1,314 +1,195 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ubaid Ullah — E-commerce & Amazon Operations</title>
-<meta name="description" content="Portfolio of Ubaid Ullah — E-commerce, Amazon Seller Central & Vendor Central operations professional.">
+
+<title>Abaid Ullah | Amazon & E-commerce Growth Specialist</title>
+
+<meta name="description" content="Portfolio of Abaid Ullah — Amazon Seller Central, Vendor Central & E-commerce Growth Specialist.">
+
 <style>
 :root{
-  --bg:#080a0f;--panel:#10141c;--panel2:#151a23;--text:#f5f7fb;--muted:#9da7b7;
-  --line:#252c38;--accent:#ffb000;--accent2:#ffd36a;--white:#fff;--max:1120px;
+  --bg:#0b0f14;
+  --panel:#121821;
+  --panel2:#18202b;
+  --text:#f5f7fb;
+  --muted:#9da7b7;
+  --line:#252c38;
+  --accent:#ff9900;
+  --accent2:#ffc266;
+  --max:1120px;
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}
+body{font-family:Inter,system-ui;background:var(--bg);color:var(--text);line-height:1.6}
 .container{width:min(var(--max),92%);margin:auto}
-nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(8,10,15,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:20px;letter-spacing:-.5px}.logo span{color:var(--accent)}
-.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--white)}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:14px;transition:.2s}
-.btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
-.hero{padding:150px 0 90px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:500px;height:500px;background:var(--accent);opacity:.08;filter:blur(100px);right:-150px;top:50px;border-radius:50%}
-.badge{display:inline-flex;border:1px solid #3a3425;background:#17140d;color:var(--accent2);padding:7px 11px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:20px}
-h1{font-size:clamp(45px,7vw,82px);line-height:.98;letter-spacing:-4px;max-width:900px}
-h1 span{color:var(--accent)}
-.hero p{max-width:720px;color:var(--muted);font-size:19px;margin:25px 0 30px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:65px}
-.stat{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:14px}
-.stat strong{display:block;font-size:30px;color:var(--accent)}.stat small{color:var(--muted)}
-section{padding:90px 0;border-top:1px solid rgba(255,255,255,.05)}
-.eyebrow{color:var(--accent);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
-h2{font-size:42px;letter-spacing:-2px;margin-bottom:12px}.section-intro{color:var(--muted);max-width:700px;margin-bottom:35px}
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}.about p{color:var(--muted);font-size:17px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:25px}
-.timeline{margin-top:28px;display:grid;gap:14px}.timeline div{padding:18px;border-left:2px solid var(--accent);background:var(--panel)}
-.timeline b{display:block;margin-bottom:5px}.timeline span{color:var(--muted);font-size:14px}
-.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.tag{padding:8px 11px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:#dce2ec;font-size:13px}
-.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.case{overflow:hidden;padding:0}.case-content{padding:25px}.case h3{font-size:22px;margin-bottom:8px}.case p{color:var(--muted);font-size:14px}
-.visual{height:210px;background:linear-gradient(135deg,#151a23,#0c0f15);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:#697384;font-size:13px;text-align:center;padding:20px}
-.visual img{width:100%;height:100%;object-fit:cover}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
-.step{background:var(--panel2);padding:13px;border-radius:9px;font-size:12px;color:var(--muted)}
-.step b{display:block;color:var(--text);margin-bottom:3px}
-.results{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);color:var(--accent2);font-weight:700}
-.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.skill{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
-.skill b{display:block;margin-bottom:5px}.skill span{color:var(--muted);font-size:13px}
-.brands{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.brand{padding:13px 17px;background:var(--panel);border:1px solid var(--line);border-radius:10px;font-weight:700}
-.contact{background:linear-gradient(135deg,#17130a,#10141c);border:1px solid #3b3220;border-radius:20px;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.contact p{color:var(--muted);max-width:600px}
-footer{padding:35px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
-@media(max-width:800px){
- .navlinks{display:none}.stats{grid-template-columns:repeat(2,1fr)}
- .about,.case-grid{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}
- h2{font-size:34px}.contact{padding:30px;display:block}.contact .btn{margin-top:20px}
+
+nav{
+position:fixed;top:0;width:100%;
+background:rgba(11,15,20,.85);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,.06);
 }
-@media(max-width:500px){
- .stats,.skill-grid{grid-template-columns:1fr}h1{letter-spacing:-2px}.hero{padding-top:125px}
- .stats{margin-top:40px}
+.nav{height:70px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800}
+.logo span{color:var(--accent)}
+
+.btn{
+padding:12px 18px;
+border-radius:10px;
+border:1px solid var(--line);
+font-weight:700;
+cursor:pointer;
+}
+.btn.primary{background:var(--accent);color:#111;border:none}
+
+.hero{
+padding:150px 0 80px;
+text-align:center;
+}
+h1{font-size:60px;margin-bottom:20px}
+h1 span{color:var(--accent)}
+
+.hero p{color:var(--muted);max-width:700px;margin:auto;margin-bottom:30px}
+
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+section{padding:80px 0;border-top:1px solid rgba(255,255,255,.05)}
+
+.card{
+background:var(--panel);
+border:1px solid var(--line);
+border-radius:14px;
+padding:25px;
+}
+
+.case-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:var(--muted);
+border-top:1px solid var(--line);
+}
+
+/* Floating WhatsApp */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+}
+
+@media(max-width:800px){
+.case-grid{grid-template-columns:1fr}
+h1{font-size:38px}
 }
 </style>
 </head>
+
 <body>
 
 <nav>
   <div class="container nav">
-    <a href="#" class="logo">UBAID<span>.</span></a>
-    <div class="navlinks">
-      <a href="#about">About</a><a href="#cases">Case Studies</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    <div class="logo">ABAID<span>.</span></div>
+    <div>
+      <a class="btn primary" href="#contact">Hire Me</a>
     </div>
-    <a class="btn primary" href="#contact">Let's Work</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="container">
-    <div class="badge">E-COMMERCE • AMAZON • MARKETPLACE OPERATIONS</div>
-    <h1>I solve complex <span>e-commerce problems.</span></h1>
-    <p>
-      I'm Ubaid Ullah, an e-commerce professional with hands-on experience across
-      Amazon Seller Central, Vendor Central and international marketplaces —
-      from listings and PPC to compliance, account health, disputes and recovery.
-    </p>
-    <div class="actions">
-      <a class="btn primary" href="#cases">View My Work ↓</a>
-      <a class="btn" href="#contact">Contact Me</a>
-    </div>
+    <h1>I scale brands on <span>Amazon & E-commerce</span></h1>
 
-    <div class="stats">
-      <div class="stat"><strong>2+</strong><small>Years Experience</small></div>
-      <div class="stat"><strong>10+</strong><small>Marketplaces</small></div>
-      <div class="stat"><strong>100+</strong><small>Accounts Managed</small></div>
-      <div class="stat"><strong>€1M+</strong><small>Recovery Experience*</small></div>
+    <p>
+      I'm Abaid Ullah — helping businesses grow, recover and optimize their Amazon
+      and marketplace operations through data-driven strategies.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="#cases">View Case Studies</a>
+      <a class="btn" href="https://wa.me/923266525796" target="_blank">WhatsApp</a>
+      <a class="btn" href="mailto:us211629@gmail.com">Email</a>
     </div>
   </div>
 </header>
 
-<section id="about">
-<div class="container">
-  <div class="eyebrow">01 — About</div>
-  <h2>More than account management.</h2>
-  <div class="about">
-    <div>
-      <p>
-        My work focuses on keeping e-commerce businesses operational, compliant
-        and profitable. I work across the full marketplace lifecycle — finding
-        problems, investigating their root causes, implementing solutions and
-        following through until the issue is resolved.
-      </p>
-      <p style="margin-top:18px">
-        My experience includes Amazon Seller Central and Vendor Central, listing
-        management, SEO, PPC, account health, compliance, reimbursements,
-        disputes, shipments, invoicing, variations and international marketplace
-        operations.
-      </p>
-      <div class="tags">
-        <span class="tag">Seller Central</span><span class="tag">Vendor Central</span>
-        <span class="tag">Amazon SEO</span><span class="tag">PPC</span>
-        <span class="tag">Compliance</span><span class="tag">Account Health</span>
-        <span class="tag">Reimbursements</span><span class="tag">Disputes</span>
-      </div>
-    </div>
-    <div class="card">
-      <div class="eyebrow">Experience Snapshot</div>
-      <div class="timeline">
-        <div><b>Amazon Seller & Vendor Operations</b><span>Account, catalog, compliance and operational management.</span></div>
-        <div><b>International Marketplaces</b><span>US • UK • DE • FR • IT • ES • NL • CA and more.</span></div>
-        <div><b>Global Brand Experience</b><span>Xiaomi • UREVO • BBURAGO • Gimoka • Naturekitchen • Valsoia • Ponti and others.</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
 <section id="cases">
 <div class="container">
-  <div class="eyebrow">02 — Case Studies</div>
-  <h2>Problems I solved.</h2>
-  <p class="section-intro">
-    Replace the screenshot placeholders below with your real, redacted screenshots.
-    Each case study follows the same format: problem → investigation → action → result.
-  </p>
 
-  <div class="case-grid">
+<h2 style="margin-bottom:20px">Case Studies</h2>
 
-    <article class="card case">
-      <div class="visual">
-        <span>BEFORE / AFTER SCREENSHOT<br>Replace this area with your redacted evidence.</span>
-      </div>
-      <div class="case-content">
-        <div class="eyebrow">Case Study 01</div>
-        <h3>Listing Suppression & Reinstatement</h3>
-        <p>Resolved a product/listing issue by identifying the underlying catalog or compliance problem and implementing the required correction.</p>
-        <div class="steps">
-          <div class="step"><b>01 Problem</b>Listing suppressed.</div>
-          <div class="step"><b>02 Diagnose</b>Root cause identified.</div>
-          <div class="step"><b>03 Fix</b>Corrected the issue.</div>
-          <div class="step"><b>04 Result</b>Listing restored.</div>
-        </div>
-        <div class="results">Outcome: Product restored to an active state.</div>
-      </div>
-    </article>
+<div class="case-grid">
 
-    <article class="card case">
-      <div class="visual">
-        <span>BEFORE / AFTER SCREENSHOT<br>Replace this area with your redacted evidence.</span>
-      </div>
-      <div class="case-content">
-        <div class="eyebrow">Case Study 02</div>
-        <h3>Compliance & Account Recovery</h3>
-        <p>Worked through account/product compliance problems, prepared corrective actions and followed up with Amazon until resolution.</p>
-        <div class="steps">
-          <div class="step"><b>01 Problem</b>Compliance issue.</div>
-          <div class="step"><b>02 Diagnose</b>Cause investigated.</div>
-          <div class="step"><b>03 Fix</b>Action plan submitted.</div>
-          <div class="step"><b>04 Result</b>Issue resolved.</div>
-        </div>
-        <div class="results">Outcome: Account/product access successfully recovered.</div>
-      </div>
-    </article>
-
-    <article class="card case">
-      <div class="visual">
-        <span>BEFORE / AFTER SCREENSHOT<br>Use claim, PO or invoice evidence after redaction.</span>
-      </div>
-      <div class="case-content">
-        <div class="eyebrow">Case Study 03</div>
-        <h3>Vendor Dispute & Recovery</h3>
-        <p>Investigated shortages, invoice discrepancies and disputed amounts using PO and payment documentation.</p>
-        <div class="steps">
-          <div class="step"><b>01 Problem</b>Payment discrepancy.</div>
-          <div class="step"><b>02 Diagnose</b>Documents reconciled.</div>
-          <div class="step"><b>03 Fix</b>Dispute submitted.</div>
-          <div class="step"><b>04 Result</b>Recovery pursued.</div>
-        </div>
-        <div class="results">Outcome: Successfully recovered significant disputed value across managed accounts.</div>
-      </div>
-    </article>
-
-    <article class="card case">
-      <div class="visual">
-        <span>BEFORE / AFTER SCREENSHOT<br>Use listing analytics or content comparison.</span>
-      </div>
-      <div class="case-content">
-        <div class="eyebrow">Case Study 04</div>
-        <h3>Listing & SEO Optimization</h3>
-        <p>Improved product content through structured titles, bullets, attributes, keywords and marketplace-specific localization.</p>
-        <div class="steps">
-          <div class="step"><b>01 Audit</b>Content reviewed.</div>
-          <div class="step"><b>02 Research</b>Keywords & market.</div>
-          <div class="step"><b>03 Optimize</b>Content rebuilt.</div>
-          <div class="step"><b>04 Publish</b>Marketplace rollout.</div>
-        </div>
-        <div class="results">Outcome: Optimized listings prepared for multiple international marketplaces.</div>
-      </div>
-    </article>
-
-    <article class="card case">
-      <div class="visual">
-        <span>BEFORE / AFTER SCREENSHOT<br>Use campaign data with confidential figures hidden.</span>
-      </div>
-      <div class="case-content">
-        <div class="eyebrow">Case Study 05</div>
-        <h3>PPC & Advertising Optimization</h3>
-        <p>Worked with campaign structures, search terms, keywords, bids and optimization workflows to improve advertising performance.</p>
-        <div class="steps">
-          <div class="step"><b>01 Audit</b>Campaign reviewed.</div>
-          <div class="step"><b>02 Analyze</b>Search data.</div>
-          <div class="step"><b>03 Optimize</b>Bids & keywords.</div>
-          <div class="step"><b>04 Monitor</b>Performance tracked.</div>
-        </div>
-        <div class="results">Outcome: Advertising structure continuously optimized against performance.</div>
-      </div>
-    </article>
-
-    <article class="card case">
-      <div class="visual">
-        <span>BEFORE / AFTER SCREENSHOT<br>Use account-health evidence with sensitive data hidden.</span>
-      </div>
-      <div class="case-content">
-        <div class="eyebrow">Case Study 06</div>
-        <h3>Account Health & Operational Recovery</h3>
-        <p>Monitored account health, identified risks and worked on resolving operational and compliance issues before they became larger problems.</p>
-        <div class="steps">
-          <div class="step"><b>01 Monitor</b>Health reviewed.</div>
-          <div class="step"><b>02 Identify</b>Risk found.</div>
-          <div class="step"><b>03 Resolve</b>Corrective action.</div>
-          <div class="step"><b>04 Maintain</b>Follow-up.</div>
-        </div>
-        <div class="results">Outcome: Account operations brought back under control.</div>
-      </div>
-    </article>
-
-  </div>
+<div class="card">
+<h3>Listing Reinstatement</h3>
+<p>Resolved suppressed listings by identifying root cause and restoring product visibility.</p>
+<strong>Result:</strong> Listings reactivated successfully.
 </div>
-</section>
 
-<section id="skills">
-<div class="container">
-  <div class="eyebrow">03 — Expertise</div>
-  <h2>What I can handle.</h2>
-  <p class="section-intro">End-to-end marketplace operations, from catalog work to complex problem resolution.</p>
-  <div class="skill-grid">
-    <div class="skill"><b>Amazon Seller Central</b><span>Listings, catalog, variations, account health, inventory, shipments and operations.</span></div>
-    <div class="skill"><b>Amazon Vendor Central</b><span>POs, cost updates, invoices, shortages, disputes and vendor operations.</span></div>
-    <div class="skill"><b>Compliance & Suspensions</b><span>Root-cause investigation, corrective actions and reinstatement workflows.</span></div>
-    <div class="skill"><b>Listing & SEO</b><span>Titles, bullets, descriptions, keywords, attributes, A+ and localization.</span></div>
-    <div class="skill"><b>PPC & Advertising</b><span>Campaign structure, keywords, search terms, bids and performance monitoring.</span></div>
-    <div class="skill"><b>Reimbursements & Disputes</b><span>Shortage, return, chargeback and other recovery workflows.</span></div>
-    <div class="skill"><b>Marketplace Operations</b><span>International catalog and operational management across multiple countries.</span></div>
-    <div class="skill"><b>Excel & Data</b><span>Operational spreadsheets, reporting, data cleanup and analysis.</span></div>
-    <div class="skill"><b>Client Management</b><span>Issue tracking, communication, reporting and operational follow-through.</span></div>
-  </div>
+<div class="card">
+<h3>Account Recovery</h3>
+<p>Handled compliance issues and reinstated seller accounts with proper documentation.</p>
+<strong>Result:</strong> Full account recovery achieved.
+</div>
 
-  <div style="margin-top:55px">
-    <div class="eyebrow">Brands & Projects</div>
-    <div class="brands">
-      <div class="brand">Xiaomi</div><div class="brand">UREVO</div><div class="brand">BBURAGO</div>
-      <div class="brand">Gimoka</div><div class="brand">Naturekitchen</div><div class="brand">Brave International</div>
-      <div class="brand">FINS</div><div class="brand">Valsoia</div><div class="brand">Ponti</div><div class="brand">OSCO</div>
-    </div>
-  </div>
+<div class="card">
+<h3>PPC Optimization</h3>
+<p>Improved campaigns by optimizing keywords, bids and structure.</p>
+<strong>Result:</strong> Higher ROI and lower ACOS.
+</div>
+
+<div class="card">
+<h3>Vendor Disputes</h3>
+<p>Recovered funds through invoice validation and dispute handling.</p>
+<strong>Result:</strong> Revenue recovery improved.
+</div>
+
+</div>
 </div>
 </section>
 
 <section id="contact">
 <div class="container">
-  <div class="contact">
-    <div>
-      <div class="eyebrow">04 — Let's Work</div>
-      <h2>Have an e-commerce problem?</h2>
-      <p>I'm available for e-commerce, Amazon and marketplace operations work. Replace the links below with your real contact details before publishing.</p>
-    </div>
-    <div class="actions">
-      <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email Me</a>
-      <a class="btn" href="https://www.linkedin.com/in/abaidullah-1322ru/" target="_blank">LinkedIn ↗</a>
-    </div>
-  </div>
+
+<div class="card" style="text-align:center">
+
+<h2>Let’s Work Together</h2>
+
+<p style="margin:15px 0;color:var(--muted)">
+Facing issues with Amazon, listings, PPC or account health?
+Let’s solve it and grow your business.
+</p>
+
+<div class="actions">
+<a class="btn primary" href="https://wa.me/923266525796" target="_blank">Chat on WhatsApp</a>
+<a class="btn" href="mailto:us211629@gmail.com">Email Me</a>
+<a class="btn" href="https://www.linkedin.com/in/abaidullah-1322ru/" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+
 </div>
 </section>
 
 <footer>
-<div class="container">
-  © 2026 Ubaid Ullah. All rights reserved. <span style="float:right">*Replace claims with verified, non-confidential figures before publishing.</span>
-</div>
+© 2026 Abaid Ullah — Amazon & E-commerce Specialist
 </footer>
+
+<a href="https://wa.me/923266525796" class="whatsapp" target="_blank">💬</a>
 
 </body>
 </html>
+```
